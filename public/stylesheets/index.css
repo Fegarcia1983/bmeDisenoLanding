@@ -1,0 +1,471 @@
+/* ************* RESET ************** */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+/* ************* HEAD ************** */
+.bde-logo {
+    width: 15%;
+}
+
+.bde-head {
+    background-image: url(../images/Ilustracion-Header-07.svg);
+    background-repeat: no-repeat;
+    padding: 0 2% 0 2%;
+    background-size: cover;
+    height: fit-content;
+    box-shadow: 0px 1px 5px lightgrey;
+}
+
+.bde-headText>h1 {
+    font-weight: lighter;
+    font-size: 43pt;
+    color: #8F98B2;
+    margin-top: 17%;
+    margin-left: 2%;
+}
+
+.bde-headText>p {
+    font-size: 11pt;
+    color: #052333;
+    margin-top: 8%;
+    margin-bottom: 6%;
+    padding-left: 3%;
+}
+
+.bde-buttonWeb {
+    height: fit-content;
+    border-radius: 10px;
+}
+
+/* ************* EXPLAIN ************** */
+.bde-explain {
+    padding-left: 3%;
+    margin-top: 3%;
+    padding: 0 2% 0 2%;
+}
+
+.bde-explain>div>h4 {
+    font-weight: bold;
+    font-size: 9pt;
+    color: #8F98B2;
+    margin-bottom: 3%;
+}
+
+.bde-explainColumn {
+    padding-right: 9%;
+}
+
+.bde-importantText {
+    font-size: 19pt;
+    font-weight: lighter;
+    color: #052333;
+    line-height: 100%;
+}
+
+.bde-normalText {
+    font-size: 10pt;
+    color: #052333;
+    line-height: 130%;
+}
+
+.bde-goodPractices {
+    margin: 3% 0%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px lightgrey;
+}
+.bde-goodPractices>div>img {
+    width: 40px;
+    margin-left: 10%;
+}
+
+.bde-cardGoodPractices {
+    padding: 1% 3%;
+    font-size: 9pt;
+}
+
+.bde-cardGoodPractices>p {
+    margin: 5% auto;
+}
+
+/* ************* WE OFFER ************** */
+.bde-weOffer {
+    padding-left: 3%;
+    margin-top: 3%;
+    padding: 0 2% 0 2%;
+}
+
+.bde-weOffer>div>h4 {
+    font-weight: bold;
+    font-size: 9pt;
+    color: #8F98B2;
+    margin-bottom: 3%;
+}
+
+.bde-weOfferColumn {
+    padding-right: 9%;
+}
+
+.bde-weOfferText {
+    font-size: 19pt;
+    font-weight: lighter;
+    color: #052333;
+    line-height: 100%;
+    margin-bottom: 4%;
+}
+.bde-weOfferCard {
+    border-radius: 15px;
+    border-width: 2px;
+    padding: 3px
+}
+
+.card-img-top {
+    margin-top: 10%;
+    height: 50px;
+    margin-bottom: 10%;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 12pt;
+    margin-bottom: 20%;
+}
+
+.card-text {
+    text-align: center;
+}
+
+/* ************* CONTACT FORM ************** */
+.bde-formTitle>h1 {
+    font-weight: lighter;
+    font-size: 43pt;
+    color: #8F98B2;
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-bottom: 4%;
+}
+
+.form-group {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 8%;
+}
+
+.form-group>textarea {
+    width: -webkit-fill-available;
+}
+
+.form-control {
+    margin: 10px 10px 10px 10px;
+}
+
+.btn-primary {
+    width: 35%;
+    background-color: #FFC69B;
+    height: fit-content;
+    Border-color: #FFC69B;
+    border-style: solid;
+    font-size: 8pt;
+}
+
+.btn-primary:focus {
+    background-color: #FFC69B;
+    Border-color: #FFC69B;
+}
+
+.btn-primary:hover {
+    color: #FFC69B;
+    background-color: white;
+    border-color: #FFC69B;
+}
+
+#formularioError {
+    width: 100%;
+    text-align: center;
+}
+
+.bde-modal {
+    padding-left: 2.25rem;
+}
+
+/* ************* SELECTORS ************** */
+.bde-goodPractices:hover {
+    box-shadow: 5px 5px 20px grey;
+}
+
+/* *********** MEDIA QUERIES ************ */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    /* ************* HEAD ************** */
+    .bde-logo {
+        width: 20%;
+    }
+
+    .bde-headText>h1 {
+        font-size: 30pt;
+        margin-top: 13%;
+
+    }
+
+    /* ************* WE OFFER ************** */
+    .card-title {
+        font-size: 9pt;
+    }
+
+    .card-text {
+        font-size: 9pt;
+    }
+
+    /* ************* CONTACT FORM ************** */
+    .form-group {
+        padding-top: 0%;
+    }
+    .btn-primary {
+        font-size: 6pt;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1023px) {
+    /* ************* HEAD ************** */
+    .bde-head {
+        height: fit-content;
+        margin: 0 auto;
+        background-position: center;
+        
+    }
+    
+    .bde-headText>h1 {
+        font-size: 28pt;
+        margin-top: 8%;
+    }
+    
+    .bde-headText>p {
+        font-size: 10pt;
+        margin-top: 3%;
+        padding-left: 3%;
+        margin-bottom: 5%;
+    }
+
+    /* ************* EXPLAIN ************** */
+    .bde-explain {
+        padding-left: 3%;
+        margin-top: 3%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bde-explain>div>h4 {
+
+        font-weight: bold;
+        font-size: 9pt;
+        color: #8F98B2;
+        margin-bottom: 3%;
+    }
+
+    .bde-explainColumn {
+        padding-right: 9%;
+    }
+
+    .bde-importantText {
+        font-size: 19pt;
+        font-weight: lighter;
+        color: #052333;
+        line-height: 100%;
+    }
+
+    .bde-normalText {
+        font-size: 8pt;
+        color: #052333;
+        line-height: 130%;
+    }
+
+    .bde-goodPractices {
+        margin: 3% 0%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 20px lightgrey;
+    }
+    .bde-goodPractices>div>img {
+        width: 40px;
+        margin-left: 10%;
+    }
+
+    .bde-cardGoodPractices {
+        padding: 1% 3%;
+        font-size: 9pt;
+    }
+
+    /* ************* WE OFFER ************** */
+    .card-title {
+        font-size: 9pt;
+    }
+
+    .card-text {
+        font-size: 9pt;
+    }
+
+    .bde-weOfferCard {
+        width: 100%;
+    }
+
+    /* ************* CONTACT FORM ************** */
+    .form-group {
+        padding-top: 0%;
+    }
+
+    .btn-primary {
+        font-size: 6pt;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* ************* HEAD ************** */
+    .bde-headText>h1 {
+        font-size: 24pt;
+        margin-top: 6%;
+    }
+
+    .bde-headText>p {
+        font-size: 10pt;
+        margin-top: 9%;
+        padding-left: 3%;
+        margin-bottom: 5%;
+    }
+    
+    /* ************* EXPLAIN ************** */
+    .bde-explain {
+        padding-left: 3%;
+        margin-top: 3%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bde-explain>div>h4 {
+
+        font-weight: bold;
+        font-size: 9pt;
+        color: #8F98B2;
+        margin-bottom: 3%;
+    }
+
+    .bde-explainColumn {
+        padding-right: 9%;
+    }
+
+    .bde-importantText {
+        font-size: 20pt;
+        font-weight: lighter;
+        color: #052333;
+        line-height: 100%;
+    }
+
+    .bde-normalText {
+        font-size: 8pt;
+        color: #052333;
+        line-height: 130%;
+    }
+
+    .bde-goodPractices {
+        margin: 3% 0%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 20px lightgrey;
+    }
+    .bde-goodPractices>div>img {
+        width: 40px;
+        margin-left: 10%;
+    }
+
+    .bde-cardGoodPractices {
+        padding: 1% 3%;
+    }
+
+    /* ************* WE OFFER ************** */
+    .bde-weOffer {
+        padding-left: 3%;
+        margin-top: 3%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bdeweOffern>div>h4 {
+
+        font-weight: bold;
+        font-size: 9pt;
+        color: #8F98B2;
+        margin-bottom: 3%;
+    }
+
+    .bde-weOfferColumn {
+        padding-right: 9%;
+    }
+
+    .bde-weOffertText {
+        font-size: 20pt;
+        font-weight: lighter;
+        color: #052333;
+        line-height: 100%;
+    }
+
+    /* ************* CONTACT FORM ************** */
+    .form-group {
+        padding-top: 0%;
+    }
+
+    .btn-primary {
+        font-size: 6pt;
+        width: 50%;
+    }
+
+    .bde-formImage {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+    /* ************* HEAD ************** */
+    .bde-logo {
+        width: 50%;
+    }
+
+    .bde-head {
+        background-image: none;
+        padding: 0 2% 0 2%;
+        background-color: none;
+        box-shadow: none;
+    }
+
+    .bde-headText>h1 {
+        font-size: 45pt;
+        margin-top: 2%;
+        margin-left: 0%;
+    }
+    
+    .bde-headText>p {
+        font-size: 15pt;
+        margin-top: 1%;
+        padding-left: 1%;
+    }
+
+    .container>div:nth-child(2n+1) {
+        background-color: #FCFBFB;
+        padding-top: 2%;
+    }
+
+    .form-group{
+        width: 100%
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
+
+    /* ************* WE OFFER ************** */
+    .card-title {
+        margin-bottom: 10%;
+    }
+}

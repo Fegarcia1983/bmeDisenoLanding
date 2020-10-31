@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ************* META DATA ************** -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ************** SCRIPTS *************** -->
+    <script src="https://kit.fontawesome.com/3837eef92e.js" crossorigin="anonymous"></script>
+
+    <!-- ************ STYLE SHEETS ************ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <link rel="stylesheet" href="../stylesheets/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+
+    <title>bme diseño</title>
+</head>
+<body>
+    <main class="container">
+        <!-- ************ MODAL VALIDATOR ************ -->
+        <div class="modal fade" id="ModalValidator" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <% if (errors != undefined) { %>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Tiene <strong id="errorsQty"><%= errors.length %></strong> error/es en el formulario de contacto</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body bde-modal">
+                        <ul>
+                            <% for (let i = 0; i < errors.length; i++) { %>
+                                <li><%= errors[i].msg %></li>
+                            <% } %>
+                        </ul>
+                    </div>
+                <% } %>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Comprendido</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- ************ HEAD ************ -->
+        <div class="col-lg-12 row bde-head col-md-12">
+            <div class="d-flex flex-row justify-content-between col-12 flex-wrap align-items-center mt-3">
+                <img src="../images/Logo-Bme-10.svg" alt="logo-bme" class="bde-logo">
+                <button class="btn btn-outline-dark bde-buttonWeb" onclick="window.location.href='https://www.bmediseno.com/'">visita nuestra web</button>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 bde-headText">
+                <h1>¿A dónde van los contactos de tus campañas?</h1>
+                <p>Si no lo sabés, necesitás una landing page para complementar tus campañas de marketing digital o tus acciones en redes sociales.</p>
+            </div>
+        </div>
+        <!-- ************ EXPLAIN ************ -->
+        <div class="row bde-explain">
+            <div class="col-lg-6 col-xl-6 col-md-10 col-sm-12 bde-explainColumn">
+                <h4>¿QUÉ ES Y PARA QUÉ?</h4>
+                <p class="bde-importantText">Es una página web diseñada específicamente para convertir visitantes en leads.</p>
+                <p class="bde-normalText">El usuario siempre va a estar más dispuesto a dejar información a través de un formulario que esté ligado a la url de quién lo envía; y más si con este formulario va a poder acceder al beneficio, curso, ofertas y a otros contenidos de interés.</p>
+                <p class="bde-normalText">Las landing pages ayudan a convertir a los usuarios en clientes finales, por eso es muy importante crear una web que lo haga de verdad.</p>
+            </div>
+            <div class="col-lg-6 col-xl-6 col-md-10 col-sm-12 bde-explainColumn">
+                <h4>BUENAS PRÁCTICAS:</h4>
+                <div class="d-flex flex-column justify-content-around">
+                  <div class="d-flex flex-row align-items-center bde-goodPractices">
+                      <div class="bde-cardGoodPractices">
+                          <img src="../images/Icono-BuenasPracticas-08.svg" alt="buenas-practicas-ico">
+                      </div>
+                      <div class="d-flex align-items-center bde-cardGoodPractices">
+                          <p>Explicar de manera clara el valor y la importancia de la oferta/servicio.</p>
+                      </div>
+                  </div>
+                  <div class="d-flex flex-row align-items-center bde-goodPractices">
+                      <div class="bde-cardGoodPractices">
+                          <img src="../images/Icono-BuenasPracticas-08.svg" alt="buenas-practicas-ico">
+                      </div>
+                      <div class="d-flex align-items-center bde-cardGoodPractices">
+                          <p>Seleccionar el número apropiado de campos para el formulario.</p>
+                      </div>
+                  </div>
+                  <div class="d-flex flex-row align-items-center bde-goodPractices">
+                      <div class="bde-cardGoodPractices">
+                          <img src="../images/Icono-BuenasPracticas-08.svg" alt="buenas-practicas-ico">
+                      </div>
+                      <div class="d-flex align-items-center bde-cardGoodPractices">
+                          <p>Eliminar el menú principal y el resto de enlaces que puedan distraer al usuario.</p>
+                      </div> 
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- ************ WE OFFER ************ -->
+        <div class="row bde-weOffer">
+            <div class="col-lg-6 col-xl-6 col-md-10 col-sm-12 bde-weOfferColumn">
+                <h4>¿QUÉ OFRECEMOS?</h4>
+                <p class="bde-weOfferText">Somos una agencia digital con las capacidades para ayudarte a crear una campaña digital 360º.</p>
+            </div>
+            <div class="col-xl-10 col-lg-10 col-md-11 mx-auto">
+                <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 bde-weOfferCards">
+                    <div class="col mb-4">
+                    <div class="card bde-weOfferCard d-flex align-items-center h-100">
+                        <img src="../images/Icono-MailNews-03.svg" class="card-img-top" alt="mail-news-ico">
+                        <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">MAIL NEWS</h5>
+                        <p class="card-text">Diseño, programación y envio</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col mb-4">
+                    <div class="card bde-weOfferCard d-flex align-items-center h-100">
+                        <img src="../images/Icono-Landing-03-04.svg" class="card-img-top" alt="landing-ico">
+                        <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">LANDING</h5>
+                        <p class="card-text">Diseño, programación y puesta en marcha</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col mb-4">
+                    <div class="card bde-weOfferCard d-flex align-items-center h-100">
+                        <img src="../images/Icono-Responsive-05.svg" class="card-img-top" alt="responsive-ico">
+                        <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">RESPONSIVE</h5>
+                        <p class="card-text">Todas nuestras webs son pensadas para que funcionen bien en desktop y mobile</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col mb-4">
+                    <div class="card bde-weOfferCard d-flex align-items-center h-100">
+                        <img src="../images/Icono-BBDD-06.svg" class="card-img-top" alt="db-ico">
+                        <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">BASE DE DATOS</h5>
+                        <p class="card-text">Podemos crear un administrador para ver y exportar todos los leads generados</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ************ CONTACT FORM ************ -->
+        <div class="row">
+            <div class="row">
+                <div class="col-xl-6 col-lg-8 col-md-12 col-sm-12 bde-formTitle">
+                    <h1>¡Agendemos una call, y hablemos!</h1>
+                </div>
+            </div>
+            <div class= "col-xl-5 col-lg-4 col-md-4 bde-formImage">
+                <img src="../images/Ilustración-Formulario-02.svg" alt="form-image">
+            </div>
+            <div class= "col-xl-7 col-lg-8 col-md-8 col-sm-12">
+                <form action="/" method="POST" class="form-group" id="formularioContacto">
+                    <div class="d-flex flex-row">
+                        <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre*">
+                        <input type="email" name="remitente" class="form-control" id="remitente" placeholder="Email*">
+                    </div>
+                    <div class="d-flex flex-row">
+                        <input type="text" name="firma" class="form-control" id="firma" placeholder="Empresa">
+                        <input type="text" name="cargo" class="form-control" id="cargo" placeholder="Cargo*">
+                    </div>
+                    <textarea name="mensaje" class="form-control" id="mensaje" placeholder="Si queres podes contarnos un poco más aquí:"></textarea>
+                    <div class="d-flex flex-row">
+                      <div class="alert alert-danger" name="formularioError" id="formularioError" role="alert" hidden>El formulario no se encuentra completo</div>
+                    </div>
+                    <div class="d-flex flex-row-reverse">
+                      <button type="submit" class="btn btn-primary form-control" name="submitButton" id="submitButton" >Enviar y agendar una call</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+    <script src="../javascripts/formValidatorFront.js"></script>
+    <!-- <script src="../javascripts/modal.js"></script>    -->
+</body>
+</html>
